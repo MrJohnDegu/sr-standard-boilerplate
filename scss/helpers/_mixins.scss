@@ -1,0 +1,273 @@
+/*
+*
+    SASS Mixins - If you have any custom sass mixins, you can put it here.
+*
+*/
+
+
+// Start your custom mixins here
+
+
+/*
+*
+    start - default media-queries (for responsiveness) custom mixins
+*
+*/
+
+    @mixin iphone-4{
+        @media only screen
+        and (min-device-width : $width-320)
+        and (max-device-height: $width-480){
+            @content
+        }
+    }
+
+    @mixin xs-phone{
+        @media only screen
+        and (min-device-width : $width-320)
+        and (max-device-width: $width-480){
+            @content
+        }
+    }
+
+    @mixin xs-phone-landscape{
+        @media only screen
+        and (min-device-width : $width-320 + 1px)
+        and (max-device-width : $width-736) {
+            @content
+        }
+    }
+    
+    @mixin xs-phone-portrait{
+        @media only screen
+        and (max-width : $width-320) {
+            @content
+        }
+    }
+
+    @mixin sm-phone{
+        @media only screen
+        and (min-device-width : $width-360)
+        and (max-device-width : $width-568) {
+            @content
+        }
+    }
+
+    @mixin sm-phone-landscape{
+        @media only screen
+        and (min-device-width : $width-360)
+        and (max-device-width : $width-568)
+        and (orientation : landscape) {
+            @content
+        }
+    }
+
+    @mixin sm-phone-portrait{
+        @media only screen
+        and (min-device-width : $width-360)
+        and (max-device-width : $width-568)
+        and (orientation : portrait) {
+            @content
+        }
+    }
+
+
+    @mixin md-phone{
+        @media only screen 
+        and (min-device-width : $width-412) 
+        and (max-device-width : $width-736) { 
+            @content
+        }
+    }
+
+    @mixin md-phone-landscape{
+        @media only screen 
+        and (min-device-width : $width-412) 
+        and (max-device-width : $width-736) 
+        and (orientation : landscape) { 
+            @content
+        }
+    }
+
+
+    @mixin md-phone-portrait{
+        @media only screen 
+        and (min-device-width : $width-412) 
+        and (max-device-width : $width-736) 
+        and (orientation : portrait) { 
+            @content
+        }
+    }
+
+    @mixin iphone-6{
+        @media only screen 
+        and (min-device-width : $width-375) 
+        and (max-device-width : $width-667) {
+            @content
+        }
+    }
+
+    @mixin iphone-6-landscape{
+        @media only screen 
+        and (min-device-width : $width-375) 
+        and (max-device-width : $width-667) 
+        and (orientation : landscape) { 
+            @content
+        }
+    }
+
+    @mixin iphone-6-portrait{
+        @media only screen 
+        and (min-device-width : $width-375) 
+        and (max-device-width : $width-667) 
+        and (orientation : portrait) { 
+            @content
+        }
+    }
+
+    @mixin iphone-6-plus{
+        @media only screen 
+        and (min-device-width : $width-414) 
+        and (max-device-width : $width-736) {
+            @content
+        }
+    }
+
+    @mixin iphone-6-plus-landscape{
+        @media only screen 
+        and (min-device-width : $width-414) 
+        and (max-device-width : $width-736) 
+        and (orientation : landscape) { 
+            @content
+        }
+    }
+
+    @mixin iphone-6-plus-portrait{
+        @media only screen 
+        and (min-device-width : $width-414) 
+        and (max-device-width : $width-736) 
+        and (orientation : portrait) { 
+            @content
+        }
+    }
+
+    @mixin ipad-up{
+        @media only screen
+        and (min-device-width : $tablet-width) {
+            @content
+        }
+    }
+
+    @mixin ipad-ipad-pro{
+        @media only screen
+        and (min-device-width : $tablet-width)
+        and (max-device-width : $desktop-width) {
+            @content
+        }
+    }
+
+    @mixin ipad{
+        @media only screen
+        and (min-device-width : $tablet-width)
+        and (max-device-width : $desktop-width - 1px) {
+            @content
+        }
+    }
+    
+    @mixin ipad-landscape{
+        @media only screen
+        and (min-device-width : $tablet-width)
+        and (max-device-width : $desktop-width)
+        and (orientation : landscape) {
+            @content
+        }
+    }
+    
+    @mixin ipad-portrait{
+        @media only screen
+        and (min-device-width : $tablet-width)
+        and (max-device-width : $desktop-width - 1px)
+        and (orientation : portrait) {
+            @content
+        }
+    }
+
+    @mixin ipad-pro{
+        @media only screen
+        and (min-device-width : $desktop-width)
+        and (max-device-width : $laptop-width - 1px) {
+            @content
+        }
+    }
+    
+    @mixin ipad-pro-landscape{
+        @media only screen
+        and (min-device-width : $desktop-width + 1)
+        and (max-device-width : 1366px)
+        and (min-device-height: 1024px)
+        and (orientation : landscape) {
+            @content
+        }
+    }
+    
+    @mixin ipad-pro-portrait{
+        @media only screen
+        and (min-device-width : $desktop-width)
+        and (max-device-width : $laptop-width - 1px)
+        and (orientation : portrait) {
+            @content
+        }
+    }
+
+    @mixin big-screen{
+        @media only screen 
+        and (min-width: $width-1400) 
+        and (max-width: $width-2880) {
+            @content;
+        }
+    }
+
+    @mixin md {
+        @media only screen 
+        and (min-width: $width-1400) 
+        and (max-width: $width-1500 - 1px) {
+            @content;
+        }
+    }
+
+    @mixin lg {
+        @media only screen 
+        and (min-width: $width-1500) 
+        and (max-width: $width-1920 - 1px) {
+            @content;
+        }
+    }
+
+    @mixin x-lg {
+        @media only screen 
+        and (min-width: $width-1920) 
+        and (max-width: $width-2561 - 2px) {
+            @content;
+        }
+    }
+
+    @mixin xx-lg {
+        @media only screen 
+        and (min-width: $width-2561 - 1px) 
+        and (max-width: $width-2880 - 1px) {
+            @content;
+        }
+    }
+
+    @mixin xxx-lg{
+        @media only screen 
+        and (min-width: $width-2880) {
+            @content;
+        }
+    }
+
+/*
+*
+    end - default media-queries (for responsiveness) custom mixins
+*
+*/

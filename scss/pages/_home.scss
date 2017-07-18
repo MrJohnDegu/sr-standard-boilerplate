@@ -1,0 +1,38 @@
+/*
+*
+    Home/Index Rules
+*
+*/
+
+// Sample
+
+.banner-container{
+    border:1px solid $sr_standard_bp_main_color;
+    margin:5%;
+    padding:2%;
+
+    @include xs-phone{
+        padding:5%;
+    }
+
+    .banner-header{
+        font-size: $sr_standard_bp_font_lg;
+        border-bottom:1px solid $sr_standard_bp_main_color;
+        padding:2% 0;
+        width:auto;
+        display:inline-block;
+
+        @include xs-phone{
+            padding:4% 0;
+        }
+    }
+
+    .banner-content{
+        font-size: $sr_standard_bp_font_sm;
+        padding:2% 0;
+
+        @include xs-phone{
+            padding:4% 0;
+        }
+    }
+}

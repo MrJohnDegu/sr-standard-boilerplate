@@ -1,0 +1,44 @@
+/*
+*
+    SASS Variables
+*
+*/
+
+// Sample
+
+$sr_standard_bp_font : 'Raleway', sans-serif;
+$sr_standard_bp_main_color : #721c54;
+$sr_standard_bp_font_sm : 1.2em;
+$sr_standard_bp_font_lg : 1.5em;
+
+/*
+*
+    start - default variables (for responsiveness)
+*
+*/
+
+$width-320: 320px;
+$width-360: 360px;
+$width-375: 375px;
+$width-412: 412px;
+$width-414: 414px;
+$width-480: 480px;
+$width-568: 568px;
+$width-667: 667px;
+$width-736: 736px;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$laptop-width: 1224px;
+
+$width-1400: 1400px;
+$width-1500: 1500px;
+$width-1920: 1920px;
+$width-2561: 2561px;
+$width-2880: 2880px;
+
+/*
+*
+    end - default variables (for responsiveness)
+*
+*/

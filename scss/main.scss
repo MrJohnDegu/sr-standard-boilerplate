@@ -1,0 +1,42 @@
+// Source for SASS Boilerplate 
+// https://www.sitepoint.com/architecture-sass-project/
+// https://github.com/HugoGiraudel
+
+// Import Helpers
+
+@import './helpers/_functions.scss';
+@import './helpers/_mixins.scss';
+@import './helpers/_variables.scss';
+
+// Import Base
+
+@import './base/_normalize.scss';
+@import './base/_typography.scss';
+
+// Import Components
+
+@import './components/_buttons.scss'; // *Optional [can be deleted if not used/required]*  
+@import './components/_carousel.scss'; // *Optional [can be deleted if not used/required]*  
+@import './components/_dropdown.scss'; // *Optional [can be deleted if not used/required]*  
+@import './components/_navigation.scss'; // *Optional [can be deleted if not used/required]*  
+
+// Import Layout
+
+@import './layout/_header.scss';
+@import './layout/_footer.scss';
+@import './layout/_sidebar.scss';
+@import './layout/_forms.scss'; // *Optional [can be deleted if not used/required]*  
+@import './layout/_grid.scss'; // *Optional [can be deleted if not used/required]*  
+
+// Import Pages
+
+@import './pages/_home.scss';
+
+// Import Themes
+
+@import './themes/_theme.scss';
+
+// Import Vendors
+
+@import './vendors/_bootstrap.scss'; // *Optional [can be deleted if not used/required]*  
+@import './vendors/_fontawesome.scss'; // *Optional [can be deleted if not used/required]*  
